@@ -26,5 +26,5 @@ steps:
 
 - script: |
     python3 -m pip install semgrep
-    semgrep -e '$X == $X' --lang=py path/to/src
+    semgrep -e '$X == $X' --lang=py .
   displayName: 'Semgrep Tests'
