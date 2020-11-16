@@ -26,6 +26,6 @@ steps:
 
 - script: |
     python3 -m pip install semgrep
-    semgrep -e '$X == $X' --lang=py .
-    pwd
+    git clone https://github.com/returntocorp/semgrep-rules.git
+    semgrep --config=semgrep-rules/python/django/security/injection .
   displayName: 'Semgrep Tests'
