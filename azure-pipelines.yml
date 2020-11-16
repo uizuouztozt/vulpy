@@ -28,5 +28,5 @@ steps:
     python3 -m pip install semgrep
     git clone https://github.com/returntocorp/semgrep-rules.git
     ls -la
-    semgrep --config=semgrep-rules/python/django/security/injection .
+    semgrep --config=semgrep-rules/python/flask/security/ .
   displayName: 'Semgrep Tests'
